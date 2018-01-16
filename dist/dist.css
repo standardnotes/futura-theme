@@ -1,0 +1,340 @@
+:root {
+  --foreground-color: #a9aabe;
+  --background-color: #20202b;
+  --highlight-color: #fca429;
+  /* Tags */
+  --tags-text-color: var(--foreground-color);
+  --tags-selected-text-color: var(--foreground-color);
+  --tags-number-text-color: var(--highlight-color);
+  --tags-bg-color: var(--background-color);
+  --tags-selected-bg-color: var(--background-color);
+  /* Notes */
+  --note-cell-text-color: var(--foreground-color);
+  --note-cell-selected-text-color: var(--foreground-color);
+  --notes-column-header-bg-color: var(--background-color);
+  --note-cell-bg-color: #272734;
+  --note-cell-selected-bg-color: var(--background-color);
+  --note-cell-border-color: #20222c;
+  --notes-column-left-border-color: 0;
+  --notes-column-right-border-color: 0;
+  /* Editor */
+  --editor-text-color: var(--foreground-color);
+  --editor-bg-color: var(--background-color);
+  --editor-title-bar-bg-color: var(--background-color);
+  /* Footer */
+  --footer-bg-color: var(--background-color);
+  --footer-link-color: #73b725;
+  --footer-bar-border-top-color: 0;
+  /* UI Components */
+  --ui-component-text-color: var(--foreground-color);
+  --ui-component-bg-color: var(--background-color);
+  /* Column Menus */
+  --section-menu-bar-bg-color: #272734;
+  --section-menu-bar-text-color: var(--foreground-color);
+  --section-menu-bar-highlighted-bg-color: #73b725;
+  --section-menu-bar-highlighted-text-color: var(--background-color);
+  --colomn-menu-text-color: var(--foreground-color);
+  --colomn-menu-highlighted-bg-color: #73b725;
+  --colomn-menu-highlighted-text-color: var(--background-color);
+  --menu-section-sep-color: var(--border-color);
+  --menu-item-sep-color: rgba(0, 0, 0, 0.1);
+  /* General */
+  --border-color: #20222c;
+  --heading-text-color: var(--foreground-color);
+  --bar-bg-color: var(--background-color);
+  --link-color: #73b725;
+}
+
+/* General */
+::selection {
+  background: #A7A7C8 !important;
+  /* WebKit/Blink Browsers */
+  color: white;
+}
+
+::-moz-selection {
+  background: #A7A7C8 !important;
+  /* Gecko Browsers */
+  color: white;
+}
+
+body {
+  color: var(--foreground-color) !important;
+}
+
+.app .section > .content {
+  background-color: var(--background-color) !important;
+}
+
+.add-button {
+  background-color: var(--ui-component-bg-color) !important;
+  color: var(--ui-component-text-color) !important;
+}
+
+.blue {
+  /*legacy, replaced with .tinted */
+  color: var(--link-color) !important;
+}
+
+.tinted {
+  color: var(--link-color) !important;
+}
+
+.tinted-selected {
+  color: var(--foreground-color) !important;
+}
+
+.app-bar {
+  background-color: var(--background-color) !important;
+  border: none !important;
+}
+
+.app-bar .item.border {
+  border-color: var(--border-color) !important;
+}
+
+.section-title-bar {
+  color: var(--foreground-color) !important;
+  background-color: var(--background-color) !important;
+}
+
+.section-title-bar-header .title {
+  color: var(--foreground-color) !important;
+}
+
+/* Tags */
+.app .tags, .tags .content {
+  background-color: var(--tags-bg-color) !important;
+}
+
+#tags-title-bar {
+  color: var(--heading-text-color) !important;
+}
+
+.tags .tag {
+  color: var(--tags-number-text-color) !important;
+}
+
+.tags .tag a {
+  color: var(--tags-selected-text-color) !important;
+}
+
+.tags .tag > .info > .title {
+  color: var(--tags-text-color) !important;
+}
+
+.tags .tag.selected > .info > .title {
+  color: var(--tags-selected-text-color) !important;
+}
+
+.tags .tag.selected {
+  background-color: var(--tags-selected-bg-color) !important;
+  color: var(--tags-number-text-color) !important;
+}
+
+.tags .tag:hover:not(.selected) {
+  background-color: var(--tags-selected-bg-color) !important;
+  color: var(--tags-number-text-color) !important;
+}
+
+.tags .tag:hover:not(.selected) .info > .title {
+  color: var(--tags-selected-text-color) !important;
+}
+
+/* Notes */
+.app .notes .content {
+  background-color: var(--background-color) !important;
+}
+
+.notes {
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+#notes-title-bar {
+  color: var(--heading-text-color) !important;
+  background-color: var(--notes-column-header-bg-color) !important;
+}
+
+.notes .filter-section .filter-bar {
+  background-color: var(--ui-component-bg-color) !important;
+}
+
+.notes .note.selected {
+  background-color: var(--note-cell-selected-bg-color) !important;
+  color: var(--note-cell-selected-text-color) !important;
+}
+
+.notes .note {
+  border-bottom: 1px solid var(--note-cell-border-color) !important;
+  background-color: var(--note-cell-bg-color) !important;
+  color: var(--note-cell-text-color);
+}
+
+.notes .scrollable {
+  border-left: 1px solid var(--notes-column-left-border-color) !important;
+  border-right: 1px solid var(--notes-column-right-border-color) !important;
+}
+
+/* Editor */
+#editor-title-bar {
+  background-color: var(--editor-title-bar-bg-color) !important;
+}
+
+#editor-title-bar > .title > .input {
+  color: var(--heading-text-color) !important;
+}
+
+.editor-content {
+  background-color: var(--editor-bg-color) !important;
+}
+
+.editor-content .editable {
+  background-color: var(--editor-bg-color);
+  color: var(--editor-text-color);
+}
+
+#editor-title-bar .editor-tags .tags-input {
+  color: var(--heading-text-color) !important;
+}
+
+#editor-title-bar #save-status {
+  color: #494B65 !important;
+}
+
+/* Footer */
+#footer-bar {
+  border-top: 1px solid var(--footer-bar-border-top-color) !important;
+  background-color: var(--footer-bg-color) !important;
+}
+
+/* Editors */
+.CodeMirror {
+  background-color: var(--editor-bg-color) !important;
+  color: var(--editor-text-color) !important;
+  border: 0 !important;
+}
+
+.CodeMirror-cursor {
+  border-color: white;
+}
+
+.CodeMirror-selected {
+  background: var(--ui-component-bg-color) !important;
+}
+
+.CodeMirror-gutters {
+  background-color: var(--background-color) !important;
+  color: var(--editor-text-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+.CodeMirror .cm-header {
+  font-family: arial;
+  color: var(--editor-text-color) !important;
+}
+
+.CodeMirror .cm-variable-2 {
+  font-family: arial;
+  color: var(--link-color) !important;
+}
+
+.CodeMirror .cm-link, .cm-string, .cm-keyword {
+  font-family: arial;
+  color: var(--editor-text-color) !important;
+}
+
+.CodeMirror .CodeMirror-linenumber {
+  color: gray !important;
+}
+
+/* Code Editor bottom toolbar */
+#select-wrapper {
+  background-color: var(--background-color) !important;
+  color: var(--editor-text-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Advanced Markdown top toolbar */
+.editor-toolbar {
+  background-color: var(--background-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+.editor-toolbar::before, ::after {
+  background: 0 !important;
+}
+
+.editor-toolbar a {
+  color: var(--editor-text-color) !important;
+}
+
+/* Simple Markdown Editor */
+#simple-markdown {
+  background-color: var(--editor-bg-color) !important;
+  color: var(--editor-text-color) !important;
+}
+
+#simple-markdown #editor {
+  background-color: var(--editor-bg-color) !important;
+  color: var(--editor-text-color) !important;
+}
+
+#simple-markdown #column-resizer {
+  background-color: var(--foreground-color) !important;
+}
+
+/* Plus Editor */
+#plus-editor .note-editor.note-frame.fullscreen .note-editable {
+  background-color: var(--background-color) !important;
+  color: var(--editor-text-color) !important;
+}
+
+#plus-editor .panel-default > .panel-heading {
+  background-color: var(--border-color) !important;
+}
+
+#plus-editor .btn-default {
+  color: var(--ui-component-text-color) !important;
+  background-color: var(--ui-component-bg-color) !important;
+  border-color: var(--background-color) !important;
+}
+
+#plus-editor .panel-heading {
+  border-color: var(--border-color) !important;
+}
+
+#plus-editor .dropdown-menu > li > a {
+  color: var(--editor-text-color);
+}
+
+.component-stack-border {
+  border-color: var(--border-color) !important;
+}
+
+/*SN Components */
+:root {
+  --body-text-color: var(--editor-text-color);
+  --body-background-color: var(--background-color);
+  --element-text-color: var(--ui-component-text-color);
+  --element-background-color: var(--ui-component-bg-color);
+  --tint-color: var(--highlight-color);
+}
+
+.sn-component .element-background-color {
+  background-color: var(--element-background-color);
+}
+
+.sn-component .body-background-color {
+  background-color: var(--body-background-color);
+}
+
+.sn-component .element-text-color {
+  color: var(--element-text-color);
+}
+
+.sn-component .body-text-color {
+  color: var(--body-text-color);
+}
+
+/*# sourceMappingURL=dist.css.map */
