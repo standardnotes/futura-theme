@@ -97,11 +97,11 @@ body {
 
 .app-bar {
   background-color: var(--background-color) !important;
-  border: none !important;
-}
-
-.app-bar .item.border {
   border-color: var(--border-color) !important;
+
+  .item.border {
+    border-color: var(--border-color) !important;
+  }
 }
 
 .section-title-bar {
@@ -350,4 +350,8 @@ body {
 
 .sn-component .body-text-color {
  color: var(--body-text-color);
+}
+
+.sn-component .border-color {
+  border-color: var(--border-color) !important;
 }
