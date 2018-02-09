@@ -43,17 +43,18 @@
   --heading-text-color: var(--foreground-color);
   --bar-bg-color: var(--background-color);
   --link-color: #73b725;
+  --text-highlight-color: #A7A7C8;
 }
 
 /* General */
 ::selection {
-  background: #A7A7C8 !important;
+  background: var(--text-highlight-color) !important;
   /* WebKit/Blink Browsers */
   color: white;
 }
 
 ::-moz-selection {
-  background: #A7A7C8 !important;
+  background: var(--text-highlight-color) !important;
   /* Gecko Browsers */
   color: white;
 }
@@ -219,7 +220,11 @@ body {
 }
 
 .CodeMirror-selected {
-  background: var(--ui-component-bg-color) !important;
+  background: var(--text-highlight-color) !important;
+}
+
+.CodeMirror-selectedtext {
+  color: white !important;
 }
 
 .CodeMirror-gutters {
@@ -266,6 +271,17 @@ body {
 
 .editor-toolbar a {
   color: var(--editor-text-color) !important;
+}
+
+.editor-preview-active, .editor-preview-active-side {
+  background-color: var(--background-color) !important;
+  border: 0 !important;
+  border-left: 1px solid white !important;
+  color: var(--editor-text-color) !important;
+}
+
+.editor-preview-active {
+  border: 0 !important;
 }
 
 /* Simple Markdown Editor */
