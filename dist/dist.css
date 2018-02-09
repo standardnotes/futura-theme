@@ -7,7 +7,7 @@
   --tags-selected-text-color: var(--foreground-color);
   --tags-number-text-color: var(--highlight-color);
   --tags-bg-color: var(--background-color);
-  --tags-selected-bg-color: var(--background-color);
+  --tags-selected-bg-color: #272734;
   /* Notes */
   --note-cell-text-color: var(--foreground-color);
   --note-cell-selected-text-color: var(--foreground-color);
