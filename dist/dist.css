@@ -12,8 +12,8 @@
   --note-cell-text-color: var(--foreground-color);
   --note-cell-selected-text-color: var(--foreground-color);
   --notes-column-header-bg-color: var(--background-color);
-  --note-cell-bg-color: #272734;
-  --note-cell-selected-bg-color: var(--background-color);
+  --note-cell-bg-color: var(--background-color);
+  --note-cell-selected-bg-color: #272734;
   --note-cell-border-color: #20222c;
   --notes-column-left-border-color: 0;
   --notes-column-right-border-color: 0;
@@ -274,7 +274,7 @@ body {
 }
 
 .editor-preview-active, .editor-preview-active-side {
-  background-color: var(--background-color) !important;
+  background-color: var(--note-cell-selected-bg-color) !important;
   border: 0 !important;
   border-left: 1px solid var(--border-color) !important;
   color: var(--editor-text-color) !important;
