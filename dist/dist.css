@@ -2,6 +2,7 @@
   --foreground-color: #a9aabe;
   --background-color: #20202b;
   --highlight-color: #fca429;
+  --pre-color: #d3d4de;
   /* Tags */
   --tags-text-color: var(--foreground-color);
   --tags-selected-text-color: var(--foreground-color);
@@ -321,6 +322,10 @@ body {
 
 #plus-editor .dropdown-menu > li > a {
   color: var(--editor-text-color);
+}
+
+#plus-editor pre {
+  background-color: var(--pre-color);
 }
 
 .component-stack-border {
