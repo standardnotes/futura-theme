@@ -45,6 +45,10 @@
   --bar-bg-color: var(--background-color);
   --link-color: #73b725;
   --text-highlight-color: #A7A7C8;
+  --sn-desktop-titlebar-bg-color: var(--background-color);
+  --sn-desktop-titlebar-border-color: var(--border-color);
+  --sn-desktop-titlebar-ui-color: var(--foreground-color);
+  --sn-desktop-titlebar-ui-hover-color: var(--highlight-color);
 }
 
 /* General */
