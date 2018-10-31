@@ -26,6 +26,7 @@
   --footer-bg-color: var(--background-color);
   --footer-link-color: #73b725;
   --footer-bar-border-top-color: 0;
+  --adv-md-btn-hover-color: #38384b;
   /* UI Components */
   --ui-component-text-color: var(--foreground-color);
   --ui-component-bg-color: var(--background-color);
@@ -285,6 +286,15 @@ body {
   color: var(--editor-text-color) !important;
 }
 
+.editor-toolbar a.active, .editor-toolbar a:hover {
+  border-color: transparent;
+  background: var(--adv-md-btn-hover-color);
+}
+
+.editor-toolbar.disabled-for-preview a:not(.no-disable) {
+  background: inherit;
+}
+
 .editor-preview-active, .editor-preview-active-side {
   background-color: var(--note-cell-selected-bg-color) !important;
   border: 0 !important;
@@ -294,6 +304,11 @@ body {
 
 .editor-preview-active {
   border: 0 !important;
+}
+
+.editor-preview.editor-preview-active pre, .editor-preview-side.editor-preview-active-side pre {
+  background-color: var(--background-color);
+  padding: 20px;
 }
 
 /* Simple Markdown Editor */
