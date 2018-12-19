@@ -30,6 +30,7 @@
   --sn-stylekit-secondary-contrast-border-color: #272734;
   --sn-stylekit-paragraph-text-color: var(--foreground-color);
   --sn-stylekit-scrollbar-track-border-color: var(--border-color);
+  --sn-stylekit-scrollbar-thumb-color: var(--sn-stylekit-info-color);
   --sn-desktop-titlebar-bg-color: var(--background-color);
   --sn-desktop-titlebar-border-color: var(--border-color);
   --sn-desktop-titlebar-ui-color: var(--foreground-color);
