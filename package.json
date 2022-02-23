@@ -1,5 +1,5 @@
 {
-  "name": "sn-futura-theme",
+  "name": "@standardnotes/futura-theme",
   "version": "1.2.6",
   "main": "dist/dist.css",
   "devDependencies": {
