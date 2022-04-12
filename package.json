@@ -13,6 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sn-extensions/futura-theme.git"
+    "url": "git://github.com/standardnotes/futura-theme.git"
+  },
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "grunt"
   }
 }
